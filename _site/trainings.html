@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CBGC | Trainings</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container">
+      <div class="navbar-nav mx-auto">
+        <a class="nav-link px-3" href="/">Home</a>
+        <a class="nav-link px-3" href="/scripts.html">Scripts</a>
+        <a class="nav-link px-3" href="/trainings.html">Trainings</a>
+      </div>
+    </div>
+  </nav>
+  
+
+  <main class="container my-5">
+    <section class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center text-primary">Training Opportunities &amp; Resources</h2>
+    <p class="lead text-center mb-5">
+      Explore CBGC-supported data science and genomics training opportunities provided through NIA and NIH initiatives.
+    </p>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-primary">CBGC SharePoint Training Hub</h5>
+            <p class="card-text">A centralized SharePoint resource for CBGC-related trainings, tutorials, and workshop materials. (Login Required)</p>
+            <a href="https://nih.sharepoint.com/sites/NIA-IRP/CBGC-Training/SitePages/Welcome-to.aspx" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+              Visit SharePoint Training Hub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-primary">NIH Data Science Training Programs</h5>
+            <p class="card-text">A comprehensive directory of NIH-sponsored data science training programs, from beginner to advanced.</p>
+            <a href="https://datascience.nih.gov/data-science-training" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+              Explore NIH Training Directory
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+        <a href="https://www.nih.gov/">NIH</a> |
+            <a href="https://www.nia.nih.gov/">NIA</a> |
+            <a href="https://www.nia.nih.gov/research/labs">NIA IRP</a> |
+            <a href="https://www.nia.nih.gov/research/labs/computational-biology-genomics-core">CBGC</a> |
+            <a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">Vulnerability Disclosure Policy</a> |
+            <a href="mailto:niairpgithub@mail.nih.gov">Contact Us</a>
+      <p class="mb-0 small">NIH NIA IRP CBGC</p>
+    </div>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll(".card");
+      cards.forEach((card, index) => {
+        card.style.opacity = 0;
+        card.style.transform = "translateY(10px)";
+        setTimeout(() => {
+          card.style.transition = "all 0.6s ease-out";
+          card.style.opacity = 1;
+          card.style.transform = "translateY(0)";
+        }, 100 * index);
+      });
+    });
+  </script>
+</body>
+</html>
