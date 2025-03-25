@@ -6,7 +6,7 @@ title: CBGC | Home
 <section class="py-5 bg-light text-center">
   <div class="container">
     <h3 class="display-5 fw-bold">Welcome to the CBGC Resource Hub</h3>
-    <p class="lead">Empowering discovery through advanced data science, collaboration, and genomic technologies</p>
+    <p class="lead">Empowering discovery through advanced data science, collaboration, and omic technologies</p>
   </div>
 </section>
 
@@ -35,7 +35,7 @@ title: CBGC | Home
         <div class="card-body">
           <h5 class="card-title text-primary">Collaborative Projects</h5>
           <p class="card-text">CBGC supports NIA research teams through consultation, custom pipeline development, and collaborative data science.</p>
-          <a href="niairpgithub@mail.nih.gov" class="btn btn-outline-primary">Contact Us</a>
+          <a href="mailto:niairpgithub@mail.nih.gov" class="btn btn-outline-primary">Contact Us</a>
         </div>
       </div>
     </div>
