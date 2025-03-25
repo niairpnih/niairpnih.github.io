@@ -6,7 +6,7 @@ title: CBGC | Home
 <section class="py-5 bg-light text-center">
   <div class="container">
     <h3 class="display-5 fw-bold">Welcome to the CBGC Resource Hub</h3>
-    <p class="lead">Empowering discovery through advanced data science, collaboration, and omic technologies</p>
+    <p class="lead">Empowering discovery through advanced data science, collaboration, and omics technologies</p>
   </div>
 </section>
 
