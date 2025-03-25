@@ -17,7 +17,7 @@
 	  <div class="container d-flex align-items-center justify-content-between py-3 flex-wrap">
 		<div class="flex-grow-1 text-center px-3 header-title">
 		  <h1>Computational Biology & Genomics Core</h1>
-		  <p>National Institute on Aging - NIH</p>
+		  <p> </p>
 		</div>
 	  </div>
 	</header>
@@ -77,7 +77,7 @@
   <!-- Footer -->
   <footer class="bg-dark text-light text-center py-4">
     <div class="container">
-      <p class="mb-0 small">&copy; National Institute on Aging, NIH - All rights reserved</p>
+      <p class="mb-0 small">&copy;  </p>
     </div>
   </footer>
 
