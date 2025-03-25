@@ -1,0 +1,115 @@
+[
+  {
+    "title": "GWAS Pipeline",
+    "description": "A comprehensive guide for conducting Genome-Wide Association Studies (GWAS), detailing the LNG GWAS pipeline for researchers.",
+    "github": "https://github.com/dimitras/GWAS-pipeline",
+    "external": "",
+    "section": "analysis"
+  },
+  {
+    "title": "UK Biobank SNCA Scripts",
+    "description": "Scripts and pipelines for analyzing SNCA gene data within the UK Biobank dataset.",
+    "github": "https://github.com/dimitras/UKbiobank_SNCA",
+    "external": "",
+    "section": "analysis"
+  },
+  {
+    "title": "mitoAnalyzer",
+    "description": "Software for analyzing mitochondrial DNA single nucleotide variants and copy number variations.",
+    "github": "https://github.com/dimitras/mitoAnalyzer",
+    "external": "",
+    "section": "analysis"
+  },
+  {
+    "title": "SAHA",
+    "description": "A tool for semi-automated hand annotation for single-cell and spatial datasets.",
+    "github": "https://github.com/dimitras/SAHA",
+    "external": "",
+    "section": "analysis"
+  },
+  {
+    "title": "Jupyter Tunnel",
+    "description": "A script to set up an SSH tunnel and connect to a remote Jupyter server securely.",
+    "github": "https://github.com/dimitras/jupyter-tunnel",
+    "external": "",
+    "section": "tools"
+  },
+  {
+    "title": "GenoML Website",
+    "description": "The official website for GenoML, providing resources and documentation.",
+    "github": "",
+    "external": "https://genoml.github.io",
+    "section": "data"
+  },
+  {
+    "title": "LNG utils",
+    "description": "Utility functions and scripts for analysis in NIH HPC environments.",
+    "github": "https://github.com/neurogenetics/LNG_utils",
+    "external": "",
+    "section": "tools"
+  },
+  {
+    "title": "SAHA data",
+    "description": "Companion dataset for the SAHA project, providing necessary data for analysis.",
+    "github": "https://github.com/neurogenetics/SAHAdata",
+    "external": "",
+    "section": "data"
+  },
+  {
+    "title": "ADRD Brain Aging",
+    "description": "Projects focusing on Alzheimer's Disease and Related Dementias (ADRD) and brain aging.",
+    "github": "https://github.com/neurogenetics/ADRD_Brain_Aging",
+    "external": "",
+    "section": "analysis"
+  },
+  {
+    "title": "Xenium Line61 Spatial",
+    "description": "Spatial transcriptomics data and analysis for the Xenium Line61 project.",
+    "github": "https://github.com/neurogenetics/Xenium_Line61_spatial",
+    "external": "",
+    "section": "data"
+  },
+  {
+    "title": "AMP-PD whole-blood eQTL",
+    "description": "AMP-PD whole-blood eQTL analyses, focusing on expression quantitative trait loci.",
+    "github": "https://github.com/neurogenetics/amppd_wb_eqtl",
+    "external": "",
+    "section": "analysis"
+  },
+  {
+    "title": "iMicroglia VLP",
+    "description": "Investigating microglia responses to virus-like particles (VLP) in neurodegenerative contexts.",
+    "github": "https://github.com/neurogenetics/iMicroglia_VLP",
+    "external": "",
+    "section": "research"
+  },
+  {
+    "title": "Bidirectional PD Smell",
+    "description": "Study on the bidirectional relationship between Parkinson's Disease and olfactory function.",
+    "github": "https://github.com/neurogenetics/Bidirectional_PD_Smell",
+    "external": "",
+    "section": "research"
+  },
+  {
+    "title": "LNG posters",
+    "description": "A collection of posters presented by the Laboratory of Neurogenetics team.",
+    "github": "https://github.com/neurogenetics/LNG_posters",
+    "external": "",
+    "section": "resources"
+  },
+  {
+    "title": "23andme_rare_variants",
+    "description": "Analysis of rare genetic variants using 23andMe data.",
+    "github": "https://github.com/neurogenetics/23andme_rare_variants",
+    "external": "",
+    "section": "analysis"
+  },
+  {
+    "title": "Detection of Frailty with Biomarker: A Population Health Study",
+    "description": "Study on detecting frailty using biomarkers in a population health context.",
+    "github": "https://github.com/neurogenetics/Detection-of-Frailty-with-Biomarkers-A-Population-Health-Study",
+    "external": "",
+    "section": "research"
+  }
+  
+]
