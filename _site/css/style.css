@@ -104,24 +104,79 @@ img {
   width: 100%;
 }
 
-/* Fade-in */
-
+/* Fade-in animation for dynamic load */
 .fade-in {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Cards */
+/* Animated card hover styling */
 .card {
-  border: 1px solid #e0e0e0;
-  border-radius: 0.5rem;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 0.5rem !important;
+  background-color: #ffffff !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  will-change: transform, box-shadow;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+
+.card .card-body {
+  transition: color 0.2s ease;
+}
+
+.card:hover .card-title {
+  color: var(--accent);
+}
+
+.script-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.script-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Header as toggle */
+.script-card .card-header {
+  background-color: #f8f9fa;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+.script-card .card-header:hover {
+  background-color: #e9ecef;
+}
+
+/* Arrow animation */
+.script-card .arrow {
+  font-size: 1.25rem;
+  transition: transform 0.2s ease;
+}
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  transition: transform 0.2s ease;
+  padding: 0;
+}
+
+.toggle-btn[aria-expanded="true"] .arrow {
+  transform: rotate(90deg);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
 /* Sections */

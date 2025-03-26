@@ -1,115 +1,122 @@
 [
   {
-    "title": "GWAS Pipeline",
-    "description": "A comprehensive guide for conducting Genome-Wide Association Studies (GWAS), detailing the LNG GWAS pipeline for researchers.",
-    "github": "https://github.com/dimitras/GWAS-pipeline",
+    "title": "aspirin analysis",
+    "description": "Aspirin Data Analysis on RoR",
+    "github": "https://github.com/dimitras/aspirin_analysis",
     "external": "",
-    "section": "analysis"
+    "section": "data",
+    "developer": "dimitras"
   },
   {
-    "title": "UK Biobank SNCA Scripts",
-    "description": "Scripts and pipelines for analyzing SNCA gene data within the UK Biobank dataset.",
-    "github": "https://github.com/dimitras/UKbiobank_SNCA",
+    "title": "Calcium Dynamics Analysis Pipeline",
+    "description": "Video segmentation of anatomical subunits within complex calcium signaling networks using spectral analysis.",
+    "github": "https://github.com/colettace/CalciumDynamicsAnalysisPipeline",
     "external": "",
-    "section": "analysis"
+    "section": "analysis",
+    "developer": "colettace"
   },
   {
-    "title": "mitoAnalyzer",
-    "description": "Software for analyzing mitochondrial DNA single nucleotide variants and copy number variations.",
-    "github": "https://github.com/dimitras/mitoAnalyzer",
+    "title": "Data Analyses",
+    "description": "Some of my machine learning projects done at the NIH",
+    "github": "https://github.com/colettace/DataAnalyses",
     "external": "",
-    "section": "analysis"
+    "section": "data",
+    "developer": "colettace"
   },
   {
-    "title": "SAHA",
-    "description": "A tool for semi-automated hand annotation for single-cell and spatial datasets.",
-    "github": "https://github.com/dimitras/SAHA",
+    "title": "eoAPI",
+    "description": "[Active Development] Earth Observation API (Metadata, Raster and Vector services)",
+    "github": "https://github.com/colettace/eoAPI",
     "external": "",
-    "section": "analysis"
+    "section": "data",
+    "developer": "colettace"
   },
   {
-    "title": "Jupyter Tunnel",
-    "description": "A script to set up an SSH tunnel and connect to a remote Jupyter server securely.",
-    "github": "https://github.com/dimitras/jupyter-tunnel",
+    "title": "Find Top Transitions",
+    "description": "Find top peaks per peptide match in MS data.",
+    "github": "https://github.com/dimitras/FindTopTransitions",
     "external": "",
-    "section": "tools"
+    "section": "data",
+    "developer": "dimitras"
   },
   {
-    "title": "GenoML Website",
-    "description": "The official website for GenoML, providing resources and documentation.",
-    "github": "",
-    "external": "https://genoml.github.io",
-    "section": "data"
+    "title": "Genomic Regions",
+    "description": "A tool for interval operations on genomic regions and statistical enrichment analysis",
+    "github": "https://github.com/apuapaquola/GenomicRegions",
+    "external": "",
+    "section": "analysis",
+    "developer": "apuapaquola"
   },
   {
-    "title": "LNG utils",
-    "description": "Utility functions and scripts for analysis in NIH HPC environments.",
-    "github": "https://github.com/neurogenetics/LNG_utils",
+    "title": "noEmbargoed Data",
+    "description": "summary statistics minus embargoed data",
+    "github": "https://github.com/mikeDTI/noEmbargoedData",
     "external": "",
-    "section": "tools"
+    "section": "data",
+    "developer": "mikeDTI"
   },
   {
-    "title": "SAHA data",
-    "description": "Companion dataset for the SAHA project, providing necessary data for analysis.",
-    "github": "https://github.com/neurogenetics/SAHAdata",
+    "title": "Plot expression data",
+    "description": "No description provided.",
+    "github": "https://github.com/dimitras/Plot_expression_data",
     "external": "",
-    "section": "data"
+    "section": "data",
+    "developer": "dimitras"
   },
   {
-    "title": "ADRD Brain Aging",
-    "description": "Projects focusing on Alzheimer's Disease and Related Dementias (ADRD) and brain aging.",
-    "github": "https://github.com/neurogenetics/ADRD_Brain_Aging",
+    "title": "Proteins To Genes",
+    "description": "Get the genes of MS data to run GO enrichment analysis",
+    "github": "https://github.com/dimitras/ProteinsToGenes",
     "external": "",
-    "section": "analysis"
+    "section": "data",
+    "developer": "dimitras"
   },
   {
-    "title": "Xenium Line61 Spatial",
-    "description": "Spatial transcriptomics data and analysis for the Xenium Line61 project.",
-    "github": "https://github.com/neurogenetics/Xenium_Line61_spatial",
+    "title": "pyslavseq",
+    "description": "Analysis package for human LINE-1 targeted sequencing data obtained with SLAV-Seq protocol",
+    "github": "https://github.com/apuapaquola/pyslavseq",
     "external": "",
-    "section": "data"
+    "section": "data",
+    "developer": "apuapaquola"
   },
   {
-    "title": "AMP-PD whole-blood eQTL",
-    "description": "AMP-PD whole-blood eQTL analyses, focusing on expression quantitative trait loci.",
-    "github": "https://github.com/neurogenetics/amppd_wb_eqtl",
+    "title": "slavseq_rf",
+    "description": "Analysis pipeline for human LINE1 targeted sequencing data obtained with the SLAV-Seq protocol.",
+    "github": "https://github.com/apuapaquola/slavseq_rf",
     "external": "",
-    "section": "analysis"
+    "section": "data",
+    "developer": "apuapaquola"
   },
   {
-    "title": "iMicroglia VLP",
-    "description": "Investigating microglia responses to virus-like particles (VLP) in neurodegenerative contexts.",
-    "github": "https://github.com/neurogenetics/iMicroglia_VLP",
+    "title": "stac-fields",
+    "description": "A minimal STAC library that contains a list of STAC fields with some metadata and helper functions for styling as HTML.",
+    "github": "https://github.com/colettace/stac-fields",
     "external": "",
-    "section": "research"
+    "section": "data",
+    "developer": "colettace"
   },
   {
-    "title": "Bidirectional PD Smell",
-    "description": "Study on the bidirectional relationship between Parkinson's Disease and olfactory function.",
-    "github": "https://github.com/neurogenetics/Bidirectional_PD_Smell",
+    "title": "tabletools",
+    "description": "Miscellaneous scripts for manipulating table files",
+    "github": "https://github.com/dimitras/tabletools",
     "external": "",
-    "section": "research"
+    "section": "tools",
+    "developer": "dimitras"
   },
   {
-    "title": "LNG posters",
-    "description": "A collection of posters presented by the Laboratory of Neurogenetics team.",
-    "github": "https://github.com/neurogenetics/LNG_posters",
+    "title": "time series analysis",
+    "description": "No description provided.",
+    "github": "https://github.com/dimitras/time_series_analysis",
     "external": "",
-    "section": "resources"
+    "section": "analysis",
+    "developer": "dimitras"
   },
   {
-    "title": "23andme_rare_variants",
-    "description": "Analysis of rare genetic variants using 23andMe data.",
-    "github": "https://github.com/neurogenetics/23andme_rare_variants",
+    "title": "trending analysis",
+    "description": "No description provided.",
+    "github": "https://github.com/dimitras/trending_analysis",
     "external": "",
-    "section": "analysis"
-  },
-  {
-    "title": "Detection of Frailty with Biomarker: A Population Health Study",
-    "description": "Study on detecting frailty using biomarkers in a population health context.",
-    "github": "https://github.com/neurogenetics/Detection-of-Frailty-with-Biomarkers-A-Population-Health-Study",
-    "external": "",
-    "section": "research"
+    "section": "analysis",
+    "developer": "dimitras"
   }
-  
 ]
