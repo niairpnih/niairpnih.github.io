@@ -1,4 +1,3 @@
-
 :root {
   --primary-navy: #003366;
   --primary-blue: #005ea2;
@@ -6,16 +5,20 @@
   --text-dark: #212121;
   --text-light: #6c757d;
   --accent: #005ea2;
-  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-sans: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
   font-family: var(--font-sans);
   color: var(--text-dark);
   background: linear-gradient(to bottom, #f8fbff, #ffffff);
@@ -26,6 +29,11 @@ body {
   background: linear-gradient(135deg, #f8fbff, #ffffff);
   background-size: 400% 400%;
   animation: bgShift 20s ease infinite;
+  flex: 1;
+}
+
+main{
+  flex: 1 0 auto;
 }
 
 @keyframes bgShift {
@@ -43,12 +51,14 @@ img {
 .hero-header {
   background-color: var(--primary-navy);
   color: #ffffff;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #003366 0%, #005ea2 100%);
 }
 
 .header-title h1 {
-  font-family: 'Segoe UI', 'Roboto', sans-serif;
-  font-size: 2rem;
   font-weight: 700;
+  font-size: 2rem;
   margin-bottom: 0.25rem;
   color: #ffffff;
 }
@@ -104,7 +114,7 @@ img {
   width: 100%;
 }
 
-/* Fade-in animation for dynamic load */
+/* Fade-in animation */
 .fade-in {
   opacity: 0;
   transform: translateY(10px);
@@ -115,7 +125,7 @@ img {
   transform: translateY(0);
 }
 
-/* Animated card hover styling */
+/* Card hover */
 .card {
   border: 1px solid #e0e0e0 !important;
   border-radius: 0.5rem !important;
@@ -138,53 +148,61 @@ img {
   color: var(--accent);
 }
 
+.card-header.collapse-toggle {
+  cursor: pointer;
+}
+
+/* Section titles */
+h2, h3, h4 {
+  font-weight: 600;
+}
+
+.section-divider {
+  height: 4px;
+  width: 80px;
+  background-color: var(--primary-blue);
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+/* Scroll reveal */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+/* Script card */
 .script-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 200px;
+  overflow: hidden;
 }
+
 .script-card:hover {
-  transform: translateY(-3px);
+  transform: scale(1.02);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Header as toggle */
 .script-card .card-header {
   background-color: #f8f9fa;
-  cursor: pointer;
   user-select: none;
-  transition: background-color 0.2s ease;
-}
-.script-card .card-header:hover {
-  background-color: #e9ecef;
-}
-
-/* Arrow animation */
-.script-card .arrow {
-  font-size: 1.25rem;
-  transition: transform 0.2s ease;
-}
-.toggle-btn {
-  background: none;
-  border: none;
-  font-size: 1.25rem;
-  transition: transform 0.2s ease;
-  padding: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.toggle-btn[aria-expanded="true"] .arrow {
-  transform: rotate(90deg);
+.collapsed-content {
+  display: none;
+  font-size: 0.875rem;
+  padding: 0.75rem;
+  overflow-y: auto;
+  height: 140px;
 }
 
-.arrow {
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
-
-/* Sections */
-section {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
-  margin-bottom: 2rem;
+.visible-content {
+  display: block;
 }
 
 /* Footer */
@@ -194,12 +212,13 @@ footer {
   text-align: center;
   padding: 1.5rem 1rem;
   font-size: 0.95rem;
+  flex-shrink: 0;
 }
 
 footer p {
   margin: 0;
 }
 
-footer a{
-  color:white;
+footer a {
+  color: white;
 }
