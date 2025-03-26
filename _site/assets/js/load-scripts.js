@@ -1,13 +1,13 @@
 fetch("/assets/data/resources.json")
   .then(response => response.json())
   .then(data => {
-    data.forEach(tool => {
+    data.forEach((tool, index) => {
       const sectionId = `${tool.section}-section`;
       const section = document.getElementById(sectionId);
       if (!section) return;
 
       const card = document.createElement("div");
-      card.className = "col";
+      card.className = "col fade-in";
       card.innerHTML = `
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -19,6 +19,11 @@ fetch("/assets/data/resources.json")
           </div>
         </div>
       `;
+
       section.appendChild(card);
+
+      setTimeout(() => {
+        card.classList.add("visible");
+      }, index * 100);
     });
   });

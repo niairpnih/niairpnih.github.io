@@ -25,7 +25,7 @@ title: CBGC | Home
       <div class="card shadow-sm h-100">
         <div class="card-body">
           <h5 class="card-title text-primary">Training Resources</h5>
-          <p class="card-text">Access our workshops, tutorials, and CBGC training events.</p>
+          <p class="card-text">Explore CBGC-led tutorials, workshops, and hands-on sessions tailored for NIA intramural researchers.</p>
           <a href="trainings.html" class="btn btn-outline-primary">Browse Trainings</a>
         </div>
       </div>
@@ -34,7 +34,7 @@ title: CBGC | Home
       <div class="card shadow-sm h-100">
         <div class="card-body">
           <h5 class="card-title text-primary">Collaborative Projects</h5>
-          <p class="card-text">CBGC supports NIA research teams through consultation, custom pipeline development, and collaborative data science.</p>
+          <p class="card-text">We partner with NIA IRP investigators to provide analysis support, pipeline development, and internal data science collaboration.</p>
           <a href="mailto:niairpgithub@mail.nih.gov" class="btn btn-outline-primary">Contact Us</a>
         </div>
       </div>
