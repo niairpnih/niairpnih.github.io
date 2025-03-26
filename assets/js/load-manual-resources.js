@@ -16,8 +16,11 @@ fetch("/assets/data/manual-resources.json")
           <div id="manual-${index}" class="collapse">
             <div class="card-body">
               <p class="card-text">${tool.description}</p>
+              ${tool.developer ? `<p><strong>Developer:</strong> ${tool.developer}</p>` : ""}
               ${tool.github ? `<p><strong>Repo:</strong> <a href="${tool.github}" target="_blank" rel="noopener noreferrer">GitHub</a></p>` : ""}
+              ${tool.tool ? `<p><strong>Tool:</strong> <a href="${tool.tool}" target="_blank" rel="noopener noreferrer">Launch</a></p>` : ""}
               ${tool.external ? `<p><strong>External:</strong> <a href="${tool.external}" target="_blank" rel="noopener noreferrer">Visit Site</a></p>` : ""}
+              ${tool.paper ? `<p><strong>Paper:</strong> <a href="${tool.paper}" target="_blank" rel="noopener noreferrer">Link</a></p>` : ""}
             </div>
           </div>
         </div>

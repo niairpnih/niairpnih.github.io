@@ -33,11 +33,14 @@ fetch("/assets/data/resources.json")
           </div>
         </div>
       `;
-
       section.appendChild(card);
-
       setTimeout(() => {
         card.classList.add("visible");
+      
+        const collapseEl = card.querySelector('.collapse');
+        if (collapseEl) {
+          new bootstrap.Collapse(collapseEl, { toggle: false });
+        }
       }, index * 100);
     });
   });

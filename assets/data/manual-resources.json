@@ -3,7 +3,7 @@
         "title": "Energetics 2024 Workshop Materials",
         "description": "Resources and analysis code from the 2024 NIH Energetics Workshop, including reproducible scripts and data exploration tools.",
         "github": "https://github.com/niairpnih/energetics2024",
-        "external": "",
+        "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11695105/",
         "section": "papers"
     }  
 ]

@@ -3,10 +3,9 @@ layout: default
 title: CBGC | Trainings
 ---
 
-<section class="py-3 bg-light" data-aos="fade-up">
+<section class="py-3 bg-light section-elevated" data-aos="fade-up">
   <div class="container text-center">
     <h2 class="mb-4 text-primary">Training Opportunities & Resources</h2>
-    <div class="section-divider"></div>
     <p class="lead mb-5">
       Explore CBGC-supported data science and genomics training opportunities provided through NIA and NIH initiatives.
     </p>
