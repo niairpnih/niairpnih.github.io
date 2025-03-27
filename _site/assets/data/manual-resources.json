@@ -1,9 +1,23 @@
 [
     {
-        "title": "Energetics 2024 Workshop Materials",
-        "description": "Resources and analysis code from the 2024 NIH Energetics Workshop, including reproducible scripts and data exploration tools.",
+        "title": "Energetics 2024 Paper",
+        "description": "Resources and analysis code from the 2024 Energetics paper, including reproducible scripts and data exploration tools.",
         "github": "https://github.com/niairpnih/energetics2024",
         "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11695105/",
         "section": "papers"
-    }  
+    } ,
+    {
+        "title": "CESTA-MS",
+        "description": "No Description provided",
+        "github": "https://github.com/nbasisty/CETSA-MS",
+        "paper": "",
+        "section": "data"
+    }  ,
+    {
+        "title": "Skyline-Protein-Turnover",
+        "description": "Tool to calculate the rates of protein turnover from mass spectrometry proteomics experiments.",
+        "github": "https://github.com/nbasisty/Skyline-Protein-Turnover",
+        "paper": "",
+        "section": "tools"
+    }    
 ]

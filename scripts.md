@@ -6,7 +6,7 @@ title: CBGC | Tools & Scripts
 <section class="py-3 bg-light section-elevated" data-aos="fade-up">
   <div class="container text-center">
     <h2 class="mb-4 text-primary">Tools, Scripts & Pipelines</h2>
-    <p class="lead">Explore CBGC-developed and affiliated tools for data analysis, visualization, and workflows.</p>
+    <p class="lead">Explore NIA-developed and affiliated tools for data analysis, visualization, and workflows.</p>
   </div>
   <div class="container py-3">
     <h4 class="mt-5 text-primary" data-aos="fade-up">🧬 Data Processing & Analysis</h4>

@@ -5,5 +5,19 @@
         "github": "https://github.com/niairpnih/energetics2024",
         "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11695105/",
         "section": "papers"
-    }  
+    } ,
+    {
+        "title": "CESTA-MS",
+        "description": "No Description provided",
+        "github": "https://github.com/nbasisty/CETSA-MS",
+        "paper": "",
+        "section": "data"
+    }  ,
+    {
+        "title": "Skyline-Protein-Turnover",
+        "description": "Tool to calculate the rates of protein turnover from mass spectrometry proteomics experiments.",
+        "github": "https://github.com/nbasisty/Skyline-Protein-Turnover",
+        "paper": "",
+        "section": "tools"
+    }    
 ]
