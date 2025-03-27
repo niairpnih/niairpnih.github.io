@@ -9,7 +9,7 @@ function createScriptCard(tool) {
   if (!section) return;
 
   const entry = document.createElement("div");
-  entry.className = "col-12 col-md-6 col-lg-4 fade-in";
+  entry.className = "script-entry col-12 col-md-6 col-lg-4 fade-in";
 
   const description = tool.description || "No description provided.";
   const developer = tool.developer ? `<p><strong>Developer:</strong> ${tool.developer}</p>` : "";
@@ -19,17 +19,15 @@ function createScriptCard(tool) {
   const paper = tool.paper ? `<p><strong>Paper:</strong> <a href="${tool.paper}" target="_blank" rel="noopener noreferrer">Link</a></p>` : "";
 
   entry.innerHTML = `
-    <details class="script-entry">
-      <summary>${tool.title}</summary>
-      <div class="script-body">
-        <p class="card-text">${description}</p>
-        ${developer}
-        ${github}
-        ${toolLink}
-        ${external}
-        ${paper}
-      </div>
-    </details>
+    <div class="summary">${tool.title}</div>
+    <div class="script-body">
+      <p class="card-text">${description}</p>
+      ${developer}
+      ${github}
+      ${toolLink}
+      ${external}
+      ${paper}
+    </div>
   `;
 
   section.appendChild(entry);
@@ -46,6 +44,26 @@ function loadResources(url) {
     .catch(err => console.error(`Error loading ${url}:`, err));
 }
 
+function attachCardToggleBehavior() {
+  const entries = document.querySelectorAll(".script-entry");
+
+  entries.forEach((entry) => {
+    const summary = entry.querySelector(".summary");
+
+    if (summary) {
+      summary.addEventListener("click", () => {
+        entries.forEach((e) => {
+          if (e !== entry) e.classList.remove("is-open");
+        });
+        entry.classList.toggle("is-open");
+      });
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-  Promise.all(sources.map(loadResources));
+  Promise.all(sources.map(loadResources)).then(() => {
+    attachCardToggleBehavior(); // Run this after all cards are rendered
+  });
 });
+

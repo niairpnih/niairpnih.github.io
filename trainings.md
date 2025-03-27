@@ -26,7 +26,7 @@ title: CBGC | Trainings
           <div class="card-body">
             <h5 class="card-title text-primary">NIH Data Science Training Programs</h5>
             <p class="card-text">A comprehensive directory of NIH-sponsored data science training programs, from beginner to advanced.</p>
-            <a href="https://datascience.nih.gov/data-science-training" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+            <a href="https://datascience.nih.gov/twice/training-resources" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
               Explore NIH Training Directory
             </a>
           </div>

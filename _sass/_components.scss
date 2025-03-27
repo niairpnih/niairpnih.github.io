@@ -1,0 +1,63 @@
+@use 'animations' as animations;
+
+.script-entry {
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  background-color: var(--card-bg);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.6s ease;
+
+  &:hover {
+    box-shadow: 0 4px 8px var(--card-hover-shadow);
+  }
+
+  .summary {
+    background-color: var(--card-header-bg);
+    color: var(--primary-navy);
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    transition: background-color 0.6s ease, color 0.6s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    border-bottom: 1px solid var(--card-border);
+    border-radius: 0;
+
+    &::after {
+      content: "\25BC";
+      transition: transform 0.6s ease;
+    }
+  }
+
+  .script-body {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1.2s ease, opacity 1s ease, padding 0.8s ease;
+    background-color: var(--card-body-bg);
+    color: var(--text-dark);
+    padding: 0 1.5rem;
+  }
+
+  &.is-open {
+    .summary {
+      background-color: var(--card-header-open-bg);
+      color: var(--card-header-open-text);
+
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    .script-body {
+      max-height: 1000px;
+      opacity: 1;
+      padding: 1rem 1.5rem;
+    }
+  }
+}

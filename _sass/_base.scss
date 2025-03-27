@@ -1,0 +1,42 @@
+/* === Base & Variables === */
+:root {
+  --primary-navy: #002b5c;
+  --primary-blue: #0066cc;
+  --accent-light: #e6f0fa;
+  --text-dark: #1c1c1c;
+  --text-light: #6c757d;
+  --accent: #007acc;
+  --accent-hover: #005ea2;
+  --font-sans: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --highlight-bg: #f0f9ff;
+  --highlight-border: #cce4f6;
+  --section-bg: #fdfefe;
+  --hover-shadow: rgba(0, 123, 255, 0.2);
+
+  /* New Card Colors */
+  --card-bg: #f3f7fb; 
+  --card-header-bg: #e0edf7; 
+  --card-header-open-bg: #e0edf7; 
+  --card-header-open-text: var(--primary-navy); 
+  --card-border: #c2d7e8; 
+  --card-body-bg: #f3f7fb; 
+  --card-hover-shadow: rgba(0, 85, 170, 0.08)
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  background-color: #f8f9fa;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  padding-bottom: 2rem;
+}

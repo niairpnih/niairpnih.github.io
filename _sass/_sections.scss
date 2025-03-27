@@ -1,0 +1,16 @@
+/* === Section-Specific Styling === */
+.hero-header {
+  background: linear-gradient(90deg, var(--primary-navy), var(--primary-blue));
+  color: #ffffff;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.section-elevated {
+  background-color: var(--section-bg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-left: 6px solid var(--accent);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}

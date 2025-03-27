@@ -1,3 +1,6 @@
 title: CBGC
 markdown: kramdown
 theme: null
+sass:
+  sass_dir: _sass
+

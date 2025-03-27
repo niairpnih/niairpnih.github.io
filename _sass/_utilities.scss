@@ -1,0 +1,33 @@
+/* === utilities.css === */
+
+/* Text alignment */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Margin helpers */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+
+/* Padding helpers */
+.pt-1 { padding-top: 0.25rem; }
+.pt-2 { padding-top: 0.5rem; }
+.pb-1 { padding-bottom: 0.25rem; }
+.pb-2 { padding-bottom: 0.5rem; }
+
+/* Font weight */
+.fw-light { font-weight: 300; }
+.fw-normal { font-weight: 400; }
+.fw-bold { font-weight: 700; }
+
+/* Hidden */
+.hidden { display: none !important; }
+
+/* Responsive flex container */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
