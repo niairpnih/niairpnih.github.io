@@ -21,4 +21,3 @@ title: CBGC | Tools & Scripts
 </section>
 
 <script src="/assets/js/load-scripts.js"></script>
-<script src="/assets/js/load-manual-resources.js"></script>
