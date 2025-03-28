@@ -20,4 +20,4 @@ title: CBGC | Tools & Scripts
   </div>
 </section>
 
-<script src="/assets/js/load-scripts.js"></script>
+<script src="{{ site.baseurl }}/assets/js/load-scripts.js"></script>

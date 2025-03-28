@@ -1,3 +1,5 @@
+baseurl: ""
+url: "https://niaiprnih.github.io"
 title: CBGC
 markdown: kramdown
 theme: null
