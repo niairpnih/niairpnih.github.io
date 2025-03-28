@@ -1,42 +1,56 @@
 /* === Base & Variables === */
 :root {
-  --primary-navy: #002b5c;
-  --primary-blue: #0066cc;
-  --accent-light: #e6f0fa;
-  --text-dark: #1c1c1c;
-  --text-light: #6c757d;
-  --accent: #007acc;
-  --accent-hover: #005ea2;
-  --font-sans: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  --highlight-bg: #f0f9ff;
-  --highlight-border: #cce4f6;
-  --section-bg: #fdfefe;
-  --hover-shadow: rgba(0, 123, 255, 0.2);
-
-  /* New Card Colors */
-  --card-bg: #f3f7fb; 
-  --card-header-bg: #e0edf7; 
-  --card-header-open-bg: #e0edf7; 
-  --card-header-open-text: var(--primary-navy); 
-  --card-border: #c2d7e8; 
-  --card-body-bg: #f3f7fb; 
-  --card-hover-shadow: rgba(0, 85, 170, 0.08)
+   /* Primary Palette */
+   --primary-blue: #608BC1;        // Navigation and footer background
+   --dark-blue: #133E87;           // Titles, strong accents
+   --soft-slate: #CBDCEB;
+   --soft-slate-dark: #8ec1e0;          // Section backgrounds
+   --card-bg: #F3F3E0;             // Card background
+   --accent: #A1E3F9;              // Button hovers, link highlights
+   --body-bg: #E9F1F7;             // Overall background
+ 
+   /* Text */
+   --text-dark: #1c1c1c;
+   --text-light: #6c757d;
+ 
+   /* Borders & Shadows */
+   --card-border: #C6D6E7;
+   --card-hover-shadow: rgba(19, 62, 135, 0.08); // subtle dark shadow
+   --hover-shadow: rgba(96, 139, 193, 0.2);
+ 
+   /* Layout */
+   --header-bg: var(--primary-blue);
+   --footer-bg: var(--primary-blue);
+   --section-bg: var(--soft-slate);
+   --highlight-bg: #EEF4FA;
+   --highlight-border: #C6D6E7;
+ 
+   /* Fonts */
+   --font-sans: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
 
-html, body {
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--body-bg);
   font-family: var(--font-sans);
   color: var(--text-dark);
-  background-color: #f8f9fa;
-  scroll-behavior: smooth;
 }
+
+/* Main grows to fill remaining space */
+main {
+  flex: 1;
+}
+
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-main {
-  padding-bottom: 2rem;
 }

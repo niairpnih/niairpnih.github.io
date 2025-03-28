@@ -20,5 +20,54 @@
   transform: translateY(0);
 }
 
+/* Helix Animations */
+.double-helix-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.helix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: spin 5s linear infinite;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.dot-a {
+  background: var(--accent); // or any color
+  animation: moveA 2s infinite ease-in-out alternate;
+}
+
+.dot-b {
+  background: var(--primary-blue); // complementary color
+  animation: moveB 2s infinite ease-in-out alternate;
+}
+
+@keyframes moveA {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(20px); }
+}
+
+@keyframes moveB {
+  0%   { transform: translateY(20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
 
 

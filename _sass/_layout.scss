@@ -1,56 +1,100 @@
 /* === Layout: Navbar & Footer === */
 
-.navbar-nav {
+.custom-navbar {
+  background-color: var(--footer-bg);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--card-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
 }
 
-.navbar-nav .nav-link {
+.nav-logo {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  color: #fff;
   font-weight: 500;
-  color: var(--primary-navy) !important;
+  text-decoration: none;
   position: relative;
   padding-bottom: 4px;
-  transition: color 0.2s;
-}
+  transition: color 0.3s ease;
 
-.navbar-nav .nav-link:hover {
-  color: var(--accent) !important;
-}
+  &:hover {
+    color: var(--accent);
+  }
 
-.navbar-nav .nav-link::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
-  background-color: var(--accent);
-  transition: all 0.3s ease-in-out;
-}
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background-color: var(--accent);
+    transition: all 0.3s ease-in-out;
+  }
 
-.navbar-nav .nav-link:hover::after {
-  left: 0;
-  width: 100%;
+  &:hover::after {
+    left: 0;
+    width: 100%;
+  }
 }
 
 // === Footer layout ===
 
-footer{
-  background-color: #002147;
-  padding: 3rem 1rem;
-  color: #fff;
+.site-footer {
+  background-color: var(--footer-bg);
+  padding: 1rem 0;
+  border-top: 1px solid var(--card-border);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15); 
+  position: relative;
+  z-index: 999;
   text-align: center;
 
   a {
     color: #fff;
-    margin: 0 0.75rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
     font-weight: 500;
+    text-decoration: none;
+    margin: 0 0.75rem;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
 
     &:hover {
       color: var(--accent);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      height: 2px;
+      width: 0;
+      background-color: var(--accent);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      left: 0;
+      width: 100%;
     }
   }
 }
