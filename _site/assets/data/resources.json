@@ -1,0 +1,122 @@
+[
+  {
+    "title": "aspirin analysis",
+    "description": "Aspirin Data Analysis on RoR",
+    "github": "https://github.com/dimitras/aspirin_analysis",
+    "external": "",
+    "section": "data",
+    "developer": "dimitras"
+  },
+  {
+    "title": "Calcium Dynamics Analysis Pipeline",
+    "description": "Video segmentation of anatomical subunits within complex calcium signaling networks using spectral analysis.",
+    "github": "https://github.com/colettace/CalciumDynamicsAnalysisPipeline",
+    "external": "",
+    "section": "analysis",
+    "developer": "colettace"
+  },
+  {
+    "title": "Data Analyses",
+    "description": "Some of my machine learning projects done at the NIH",
+    "github": "https://github.com/colettace/DataAnalyses",
+    "external": "",
+    "section": "data",
+    "developer": "colettace"
+  },
+  {
+    "title": "eoAPI",
+    "description": "[Active Development] Earth Observation API (Metadata, Raster and Vector services)",
+    "github": "https://github.com/colettace/eoAPI",
+    "external": "",
+    "section": "data",
+    "developer": "colettace"
+  },
+  {
+    "title": "Find Top Transitions",
+    "description": "Find top peaks per peptide match in MS data.",
+    "github": "https://github.com/dimitras/FindTopTransitions",
+    "external": "",
+    "section": "data",
+    "developer": "dimitras"
+  },
+  {
+    "title": "Genomic Regions",
+    "description": "A tool for interval operations on genomic regions and statistical enrichment analysis",
+    "github": "https://github.com/apuapaquola/GenomicRegions",
+    "external": "",
+    "section": "analysis",
+    "developer": "apuapaquola"
+  },
+  {
+    "title": "noEmbargoed Data",
+    "description": "summary statistics minus embargoed data",
+    "github": "https://github.com/mikeDTI/noEmbargoedData",
+    "external": "",
+    "section": "data",
+    "developer": "mikeDTI"
+  },
+  {
+    "title": "Plot expression data",
+    "description": "No description provided.",
+    "github": "https://github.com/dimitras/Plot_expression_data",
+    "external": "",
+    "section": "data",
+    "developer": "dimitras"
+  },
+  {
+    "title": "Proteins To Genes",
+    "description": "Get the genes of MS data to run GO enrichment analysis",
+    "github": "https://github.com/dimitras/ProteinsToGenes",
+    "external": "",
+    "section": "data",
+    "developer": "dimitras"
+  },
+  {
+    "title": "pyslavseq",
+    "description": "Analysis package for human LINE-1 targeted sequencing data obtained with SLAV-Seq protocol",
+    "github": "https://github.com/apuapaquola/pyslavseq",
+    "external": "",
+    "section": "data",
+    "developer": "apuapaquola"
+  },
+  {
+    "title": "slavseq_rf",
+    "description": "Analysis pipeline for human LINE1 targeted sequencing data obtained with the SLAV-Seq protocol.",
+    "github": "https://github.com/apuapaquola/slavseq_rf",
+    "external": "",
+    "section": "data",
+    "developer": "apuapaquola"
+  },
+  {
+    "title": "stac-fields",
+    "description": "A minimal STAC library that contains a list of STAC fields with some metadata and helper functions for styling as HTML.",
+    "github": "https://github.com/colettace/stac-fields",
+    "external": "",
+    "section": "data",
+    "developer": "colettace"
+  },
+  {
+    "title": "tabletools",
+    "description": "Miscellaneous scripts for manipulating table files",
+    "github": "https://github.com/dimitras/tabletools",
+    "external": "",
+    "section": "tools",
+    "developer": "dimitras"
+  },
+  {
+    "title": "time series analysis",
+    "description": "No description provided.",
+    "github": "https://github.com/dimitras/time_series_analysis",
+    "external": "",
+    "section": "analysis",
+    "developer": "dimitras"
+  },
+  {
+    "title": "trending analysis",
+    "description": "No description provided.",
+    "github": "https://github.com/dimitras/trending_analysis",
+    "external": "",
+    "section": "analysis",
+    "developer": "dimitras"
+  }
+]
