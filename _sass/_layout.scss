@@ -36,14 +36,11 @@
 
 // === Footer layout ===
 
-footer {
-  position: relative;
+footer{
   background-color: #002147;
+  padding: 3rem 1rem;
   color: #fff;
   text-align: center;
-  padding: 3rem 1rem;
-  overflow: hidden;
-  z-index: 1;
 
   a {
     color: #fff;
