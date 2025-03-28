@@ -1,7 +1,9 @@
-🧬 CBGC GitHub Pages Site
+🧬** CBGC GitHub Pages Site**
+
 This site serves as the official web presence of the Computational Biology and Genomics Core (CBGC) at the National Institute on Aging (NIA), NIH. 
 
 **Purpose**
+
 The site provides centralized access to:
 
   🔧 Scripts and Pipelines: Reusable tools and workflows developed by CBGC and its collaborators.
@@ -13,6 +15,7 @@ The site provides centralized access to:
   🧪 Interactive Visualizations: Embedded tools and demos for genomic analysis.
 
 **Built With**
+
   Jekyll
 
   Bootstrap 5
