@@ -1,67 +1,137 @@
-@use 'animations' as animations;
+/* ==========================================================================
+   COMPONENTS
+   ========================================================================== */
 
-.script-entry {
-  border: 1px solid var(--card-border);
-  border-radius: 0.75rem;
-  background-color: var(--soft-slate-dark);
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-  transition: box-shadow 0.6s ease;
-  max-width: 300px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+/* Buttons, cards, badges, etc. */
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #133E87;
+  color: #fff;
 
   &:hover {
-    box-shadow: 0 4px 8px var(--card-hover-shadow);
+    background-color: darken(#133E87, 10%);
+  }
+}
+
+/* Example default card - retain for general use */
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ==========================================================================
+   Script Expand Card - Expanding Hover Card for script.md
+   ========================================================================== */
+
+.script-expand-card {
+  background: var(--card-bg);
+  color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  height: 100px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+
+  &:hover {
+    height: 250px;
   }
 
-  .summary {
-    background-color: var(--card-header-bg);
-    color: var(--primary-navy);
-    padding: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    list-style: none;
-    transition: background-color 0.6s ease, color 0.6s ease;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    border-bottom: 1px solid var(--card-border);
-    border-radius: 0;
+  .script-card-front {
+    background: var(--soft-slate-dark); // Neon pink top section
+    /*padding: 20px;*/
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: center;
 
-    &::after {
-      content: "\25BC";
-      transition: transform 0.6s ease;
+    h3 {
+      font-size: 1.4rem;
+      margin: 0;
+      font-weight: 600;
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 80px; 
+      height: auto;
+    }
+
+    img {
+      max-width: 50px;
+      margin-bottom: 10px;
     }
   }
 
-  .script-body {
-    max-height: 0;
+  .script-card-content {
+    background: var(--card-bg);
+    color: #000;
+    padding: 16px;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease, max-height 0.4s ease;
     opacity: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 1.2s ease, opacity 1s ease, padding 0.8s ease;
-    background-color: var(--card-body-bg);
-    color: var(--text-dark);
-    padding: 0 1.5rem;
-  }
 
-  &.is-open {
-    .summary {
-      background-color: var(--card-header-open-bg);
-      color: var(--card-header-open-text);
+    p {
+      margin: 0 0 0.5rem;
+    }
 
-      &::after {
-        transform: rotate(180deg);
+    a {
+      color: #133E87;
+      text-decoration: underline;
+
+      &:hover {
+        color: darken(#133E87, 10%);
       }
     }
-
-    .script-body {
-      max-height: 1000px;
-      opacity: 1;
-      padding: 1rem 1.5rem;
-    }
   }
+
+  &:hover .script-card-content {
+    opacity: 1;
+    max-height: 250px;
+    overflow-y: auto;
+  }
+}
+
+/* ==========================================================================
+   Typography helpers (optional reuse)
+   ========================================================================== */
+.headline-xl {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.text-primary {
+  color: #133E87;
+}
+
+.max-width-md {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
 }

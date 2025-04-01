@@ -9,24 +9,28 @@ function createScriptCard(tool) {
   if (!section) return;
 
   const entry = document.createElement("div");
-  entry.className = "script-entry col-12 col-md-6 col-lg-4 fade-in";
+  entry.className = "col-12 col-md-6 col-lg-4 fade-in";
 
   const description = tool.description || "No description provided.";
   const developer = tool.developer ? `<p><strong>Developer:</strong> ${tool.developer}</p>` : "";
-  const github = tool.github ? `<p><strong>Repo:</strong> <a href="${tool.github}" target="_blank" rel="noopener noreferrer">GitHub</a></p>` : "";
-  const toolLink = tool.tool ? `<p><strong>Tool:</strong> <a href="${tool.tool}" target="_blank" rel="noopener noreferrer">Launch</a></p>` : "";
-  const external = tool.external ? `<p><strong>External:</strong> <a href="${tool.external}" target="_blank" rel="noopener noreferrer">Visit Site</a></p>` : "";
-  const paper = tool.paper ? `<p><strong>Paper:</strong> <a href="${tool.paper}" target="_blank" rel="noopener noreferrer">Link</a></p>` : "";
+  const github = tool.github ? `<p><strong>Repo:</strong> <a href="${tool.github}" target="_blank">GitHub</a></p>` : "";
+  const toolLink = tool.tool ? `<p><strong>Tool:</strong> <a href="${tool.tool}" target="_blank">Launch</a></p>` : "";
+  const external = tool.external ? `<p><strong>External:</strong> <a href="${tool.external}" target="_blank">Visit Site</a></p>` : "";
+  const paper = tool.paper ? `<p><strong>Paper:</strong> <a href="${tool.paper}" target="_blank">Link</a></p>` : "";
 
   entry.innerHTML = `
-    <div class="summary">${tool.title}</div>
-    <div class="script-body">
-      <p class="card-text">${description}</p>
-      ${developer}
-      ${github}
-      ${toolLink}
-      ${external}
-      ${paper}
+    <div class="script-expand-card">
+      <div class="script-card-front">
+        <h3>${tool.title}</h3>
+      </div>
+      <div class="script-card-content">
+        <p>${description}</p>
+        ${developer}
+        ${github}
+        ${toolLink}
+        ${external}
+        ${paper}
+      </div>
     </div>
   `;
 
@@ -45,7 +49,7 @@ function loadResources(url) {
 }
 
 function attachCardToggleBehavior() {
-  const entries = document.querySelectorAll(".script-entry");
+  const entries = document.querySelectorAll(".script-entry, .script-glass-card");
 
   entries.forEach((entry) => {
     const summary = entry.querySelector(".summary");
@@ -66,4 +70,3 @@ document.addEventListener("DOMContentLoaded", () => {
     attachCardToggleBehavior(); // Run this after all cards are rendered
   });
 });
-

@@ -19,6 +19,7 @@ title: CBGC | Home
           <p class="card-text">
             We enable scientific discoveries in aging by providing expertise in computational biology, data analysis, and genome science integration.
           </p>
+          <p></p>
           <a href="scripts.html" class="btn btn-outline-primary mt-3">View Scripts</a>
         </div>
       </div>
@@ -43,6 +44,9 @@ title: CBGC | Home
     </div>
   </div>
 </section>
-<!--<section>
-{% include double-helix.html %}
-</section>-->
+<section>
+  {% include double-helix.html %}
+</section>
+
+
+

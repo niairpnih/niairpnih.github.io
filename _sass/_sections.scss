@@ -9,6 +9,7 @@
 .section-elevated {
   background-color: var(--section-bg);
   margin: 4rem auto; 
+  margin-bottom: 3rem;
   max-width: 1000px;
   width: 90%;
   padding: 2.5rem 2rem;
@@ -37,6 +38,8 @@
     border: 1px solid var(--card-border);
     border-radius: 0.75rem;
     box-shadow: 0 2px 4px var(--hover-shadow);
+    max-width: 1000px;
+    width: 90%;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
