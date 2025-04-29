@@ -146,4 +146,4 @@ def scrape_all_profiles(profile_list_file):
     print(f"[DONE] Total entries in resources.json: {len(updated)}")
 
 if __name__ == "__main__":
-    scrape_all_profiles("github_profiles.json")
+    scrape_all_profiles("scripts/github_profiles.json")
