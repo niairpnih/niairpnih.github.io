@@ -12,6 +12,12 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
+      - name: Check for .python-version file
+        run: |
+          echo "Checking workspace for .python-version file..."
+          find . -name ".python-version" || echo "No .python-version file found."
+          cat .python-version || echo ".python-version does not exist or is empty."
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
