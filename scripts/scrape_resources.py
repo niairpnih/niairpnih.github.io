@@ -15,7 +15,8 @@ SECTION_MAP = {
     "pipeline": "analysis"
 }
 
-RESOURCE_PATH = "../assets/data/resources.json"
+# Path to resources output
+RESOURCE_PATH = os.path.join("assets", "data", "resources.json")
 
 def load_existing_resources():
     if os.path.exists(RESOURCE_PATH):
@@ -123,6 +124,9 @@ def get_repositories(username, existing_resources):
     return new_resources
 
 def scrape_all_profiles(profile_list_file):
+    if not os.path.exists(profile_list_file):
+        raise FileNotFoundError(f"[ERROR] Cannot find profile list: {profile_list_file}")
+
     with open(profile_list_file, "r") as f:
         usernames = json.load(f)
 
@@ -139,11 +143,15 @@ def scrape_all_profiles(profile_list_file):
 
     updated = existing + total_new
 
+    # Ensure the assets/data directory exists before writing
+    os.makedirs(os.path.dirname(RESOURCE_PATH), exist_ok=True)
+
     with open(RESOURCE_PATH, "w") as f:
         json.dump(sorted(updated, key=lambda x: x['title'].lower()), f, indent=2)
 
+    print(f"[INFO] Wrote {len(updated)} total entries to {RESOURCE_PATH}")
     print(f"[DONE] Total new entries added: {len(total_new)}")
-    print(f"[DONE] Total entries in resources.json: {len(updated)}")
 
 if __name__ == "__main__":
+    # Assume script is called from repo root
     scrape_all_profiles("scripts/github_profiles.json")
