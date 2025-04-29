@@ -4,6 +4,7 @@ import json
 import re
 import os
 import time
+import sys
 
 # Keywords to categorize repositories
 KEYWORDS = ["data", "analysis", "visualizer", "tool", "pipeline"]
@@ -15,7 +16,6 @@ SECTION_MAP = {
     "pipeline": "analysis"
 }
 
-# Path to resources output
 RESOURCE_PATH = os.path.join("assets", "data", "resources.json")
 
 def load_existing_resources():
@@ -47,7 +47,6 @@ def get_full_name_from_profile(username):
             if full_name:
                 print(f"[INFO] Found full name for {username}: {full_name}")
                 return full_name
-        print(f"[DEBUG] No full name found, using username: {username}")
         return username
     except Exception as e:
         print(f"[ERROR] Exception during profile scrape for {username}: {e}")
@@ -59,9 +58,7 @@ def get_repositories(username, existing_resources):
     repo_tab_url = f"https://github.com/{username}?tab=repositories"
 
     print(f"[INFO] Scraping GitHub user: {username}")
-    print(f"[DEBUG] Fetching repo list: {repo_tab_url}")
     r = requests.get(repo_tab_url)
-
     if r.status_code != 200:
         print(f"[ERROR] Failed to load repo tab for {username} — status code: {r.status_code}")
         return new_resources
@@ -73,7 +70,7 @@ def get_repositories(username, existing_resources):
         print(f"[DEBUG] No repositories found for {username}")
         return new_resources
 
-    for i, li in enumerate(repo_list, 1):
+    for li in repo_list:
         a_tag = li.find("a", itemprop="name codeRepository")
         if not a_tag:
             continue
@@ -105,7 +102,6 @@ def get_repositories(username, existing_resources):
 
         # Try to extract paper URL from README
         readme_url = f"https://raw.githubusercontent.com/{username}/{repo_name}/main/README.md"
-        print(f"[DEBUG] Fetching README: {readme_url}")
         try:
             readme_r = requests.get(readme_url)
             if readme_r.status_code == 200:
@@ -113,8 +109,6 @@ def get_repositories(username, existing_resources):
                 if match:
                     repo_data["paper"] = match.group(0)
                     print(f"[PAPER] Found paper link: {match.group(0)}")
-            else:
-                print(f"[DEBUG] README not found (status {readme_r.status_code})")
         except Exception as e:
             print(f"[ERROR] Error checking README: {e}")
 
@@ -138,12 +132,14 @@ def scrape_all_profiles(profile_list_file):
         if user_resources:
             print(f"[INFO] Added {len(user_resources)} new from {username}")
             total_new.extend(user_resources)
-        else:
-            print(f"[INFO] No new resources from {username}")
+
+    if not total_new:
+        print("[INFO] No new resources to add. Exiting without writing.")
+        sys.exit(0)  # ✅ Exit successfully, nothing to commit
 
     updated = existing + total_new
 
-    # Ensure the assets/data directory exists before writing
+    # Ensure output directory exists
     os.makedirs(os.path.dirname(RESOURCE_PATH), exist_ok=True)
 
     with open(RESOURCE_PATH, "w") as f:
@@ -153,5 +149,5 @@ def scrape_all_profiles(profile_list_file):
     print(f"[DONE] Total new entries added: {len(total_new)}")
 
 if __name__ == "__main__":
-    # Assume script is called from repo root
+    # Called from root of repo
     scrape_all_profiles("scripts/github_profiles.json")
